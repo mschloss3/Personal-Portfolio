@@ -13,6 +13,10 @@
     }
 }
 
+#my-name, h2 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
 .text-center {
     text-align: center!important;
 }
@@ -106,8 +110,36 @@ ul {
     align-items: center!important;
 }
 
+.hero-name {
+    font-size: 65px;
+    font-weight: 700;
+    line-height:56px;
+    font-family: cursive;
+    color: black;
+}
+
 .hero-container {
-    color: white;
+    color: black;
+    font-family: fantasy;
     margin-bottom: 220px;
     margin-right: 50px;
 }
+
+span {
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+main {
+    margin-left: 300px;
+    display: block;
+}
+
+.skills {
+    background: rgb(187, 242, 252)
+}
+
+.progress-bar {
+    height: 20px;
+}
+
