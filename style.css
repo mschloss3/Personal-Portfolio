@@ -13,8 +13,19 @@
     }
 }
 
+@media (min-width: 992px){
+    .col-lg-4 {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+}
+
+@media (min-width:768px) {
+    
+}
+
 #my-name, h2 {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .text-center {
@@ -135,7 +146,7 @@ main {
     display: block;
 }
 
-.skills {
+.skills, .contact {
     background: rgb(187, 242, 252)
 }
 
@@ -143,3 +154,135 @@ main {
     height: 20px;
 }
 
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+
+.scrollable-row {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 50%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+.projects {
+    padding: 1rem;
+    background-color:#ffd394;
+    display: grid;
+}
+
+.projects > img {
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.title-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+  }
+
+  
+
+  .aspectRatioBox {
+    padding-top: 10px;
+    background-size: cover;
+  }
+
+  .rounded {
+    border-radius: 0.25!important;
+  }
+
+  .contact-inner {
+    background-color:#ffd394;
+    padding: 24px 0;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: 15px;
+  }
+
+  h3 {
+    font-weight: bolder;
+  }
+
+  .aspectratiobox-location {
+    padding-top: calc(1/2 *100%);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black;
+  }
+
+  .contact-email, .contact-social {
+    margin-top: 24px;
+  }
+
+  h4 {
+    font-size: 1rem;
+    margin-bottom: 0px;
+  }
+
+  .contact-email i {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 12px;
+  }
+
+  .contact-social i {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 12px;
+  }
+
+  .contact-email, .contact-social {
+    text-align: center;
+  }
+
+  .contact-rounded {
+    text-align: center;
+  }
+  
+.send-message-button {
+    background-color:navy;
+    color: #fff;
+    margin-top: 12px;
+}
+
+  .contact-column {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .footer-inner {
+    background-color: grey;
+    color: black;
+    font-size: 14px;
+    border-top: 1px solid grey;
+    padding: 24px 0;
+  }
+
+  .col-auto {
+    margin-left: 300px;
+  }
+
+  .border-style {
+    border: 1px solid black;
+  }
+
+  /* .container-fluid {
+    max-width: 1550px;
+  } */
