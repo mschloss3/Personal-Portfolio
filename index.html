@@ -11,9 +11,37 @@
 
 <body>
     <!-- header/nav -->
-    <div id="home">
-        <header class="text-white">
-            <div class="d-flex flex-column">
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+        <img class="img-fluid rounded-circle" src="./images/headshot.jpeg">
+        <a class="navbar-brand" href="#">Marina's Personal Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+    
+
+    <!-- <div id="home container-fluid"> -->
+        <!-- <header class="text-white flex-column d-flex">
                 <div class="profile text-center">
                     <a href="#home">
                         <img class="img-fluid rounded-circle" src="./images/headshot.jpeg">
@@ -64,86 +92,82 @@
                         </li>
                     </ul>
                 </nav>
-            </div>
         </header>
-    </div>
+    </div> -->
 <!-- hero -->
-    <div class="hero d-flex flex-column justify-content-center align-items-center">
+    <div class="hero d-flex flex-column container-fluid justify-content-center align-items-center">
         <div class="hero-container">
             <h1 class="hero-name">Marina Schlosser</h1>
             <p class="text-center mt-3" id="title">Full Stack Web Developer</p>
         </div>
     </div>
 <!-- main -->
-<main>
-    <section id="about" class="container-fluid about">
-        <div class="container">
+    <main>
+        <section id="about" class="container-fluid about">
             <div class="title-section mt-3 mb-5">
                 <h2 class="hover-underline-animation">About</h2>
                 <p class="mt-4">
-                    My name is Marina and I am enrolled in a <a href="https://www.altcademy.com/programs/fswd"> full-stack developer course at Atlacademy</a>. If you would like to check out some of the skills I have aquired, projects I have completed, my resume or my contact information check out my website below. Thanks!
+                    My name is Marina and I am enrolled in a <a href="https://www.altcademy.com/programs/fswd"> full-stack developer course at Atlacademy</a>. If you would like to check out some of the skills I have aquired, projects I have completed, or my contact information check out my website below. Thanks!
                 </p>
             </div>
-        </div>
-    </section>
-    <section id="skills" class=" container-fluid skills mt-3 mb-3 pt-3 pb-3">
-        <div class=" container">
-            <div class="title-section">
-                <h2 class="hover-underline-animation">Skills</h2>
-                <p>Through this class I have been able to learn the following skills so as to perform any Full Stack Developer tasks and responsbilities.</p>
-            </div>
-            <div class="row mt-4 font-weight-bold">
-                <div class="col-12 col-lg-6">
-                    <div class="skill-level mb-3">
-                        <span>HTML</span>
-                        <span class="float-right">90%</span>
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+        </section>
+        <section id="skills" class=" container-fluid skills mt-3 mb-3 pt-3 pb-3">
+            <div class=" container">
+                <div class="title-section">
+                    <h2 class="hover-underline-animation">Skills</h2>
+                    <p>Through this class I have been able to learn the following skills so as to perform any Full Stack Developer tasks and responsbilities.</p>
+                </div>
+                <div class="row mt-4 font-weight-bold">
+                    <div class="col-12 col-lg-6">
+                        <div class="skill-level mb-3">
+                            <span>HTML</span>
+                            <span class="float-right">90%</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill-level mb-3">
+                            <span>CSS</span>
+                            <span class="float-right">90%</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill-level mb-3">
+                            <span>JavaScript</span>
+                            <span class="float-right">0%</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="skill-level mb-3">
-                        <span>CSS</span>
-                        <span class="float-right">90%</span>
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="col-12 col-lg-6 mt-2 mt-lg-0">
+                        <div class="skill-level mb-3">
+                            <span>RUBY on Rails</span>
+                            <span class="float-right">0%</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill-level mb-3">
-                        <span>JavaScript</span>
-                        <span class="float-right">0%</span>
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="skill-level mb-3">
+                            <span>ReactJS</span>
+                            <span class="float-right">0%</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill-level mb-3">
+                            <span>Back-end development</span>
+                            <span class="float-right">0%</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 mt-2 mt-lg-0">
-                    <div class="skill-level mb-3">
-                        <span>RUBY on Rails</span>
-                        <span class="float-right">0%</span>
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill-level mb-3">
-                        <span>ReactJS</span>
-                        <span class="float-right">0%</span>
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill-level mb-3">
-                        <span>Back-end development</span>
-                        <span class="float-right">0%</span>
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
-    </section>
-    <section id="portfolio" class="container-fluid portfolio mt-3 mb-3 pt-3 pb-3">
-        <div class="container">
+        </section>
+        <section id="portfolio" class="container-fluid portfolio mt-3 mb-0 pt-3 pb-0">
             <div class="title-section">
                 <h2 class="hover-underline-animation">Portfolio</h2>
             </div>
@@ -152,80 +176,57 @@
                     <a href ="marina-schlosser-appleclone3.netlify.app">
                         <span><img class="img-responsive" src="./images/appleclone-project.png"></span>
                     </a>
-                  <p class="mb-1">Apple Page Clone</p>
+                    <div class="portfolio-info">
+                        <p class="mb-1 portfolio-title">Apple Page Clone</p>
+                        <span class="portfolio-html">HTML</span>
+                        <span class="portfolio-css">CSS</span>
+                    </div>
                 </div>
                 <div class="projects">
                     <a href="https://newsweekclone2-marinaschlosser.netlify.app/">
                         <span><img class="img-responsive" src="images/newsweek-clone.png"></span>
                     </a>
-                  <p class="mb-1">Newsweek clone with boostrap 4</p>
+                    <div class="portfolio-info">
+                        <p class="mb-1 portfolio-title">Newsweek Clone with boostrap</p>
+                        <span class="portfolio-html">HTML</span>
+                        <span class="portfolio-css">CSS</span>
+                    </div>
                 </div>
                 <div class="projects">
                     <a href="airbnbclone-marinas.netlify.app">
                         <span><img class="img-responsive" src="./images/airbnb-clone.png"></span>
                     </a>
-                  <p class="mb-1">Airbnb Clone</p>
+                    <div class="portfolio-info">
+                        <p class="mb-1 portfolio-title">Airbnb Clone</p>
+                        <span class="portfolio-html">HTML</span>
+                        <span class="portfolio-css">CSS</span>
+                    </div>
+                  
                 </div>
                 <div class="projects">
                     <a href="https://airbnbnews3-marinaschlosser.netlify.app/">
                         <span><img class="img-responsive" src="./images/airbnb-news-clone.png"></span>
                     </a>
-                  <p class="mb-1">Airbnb News Clone</p>
+                  <div class="portfolio-info">
+                    <p class="mb-1 portfolio-title">Airbnb News Clone</p>
+                    <span class="portfolio-html">HTML</span>
+                    <span class="portfolio-css">CSS</span>
+                </div>
                 </div>
                 <div class="projects">
                     <a href="https://airbnbexperiences-boostrap-marinas.netlify.app/">
                         <span><img class="img-responsive" src="./images/airbnb-online-experiences.png"></span>
                     </a>
-                  <p class="mb-1">Airbnb Online Experiences Clone</p>
+                  <div class="portfolio-info">
+                    <p class="mb-1 portfolio-title">Airbnb Online Experiences Clone</p>
+                    <span class="portfolio-html">HTML</span>
+                    <span class="portfolio-css">CSS</span>
+                </div>
                 </div>
             </div>
+        </section>
 
-            <!-- <div class="row flex-nowrap scrollable-row">
-                <div class="col-6 col-sm-4 col-md-3 col-xl-2 ">
-                    <div class="text-box aspectRatioBox mb-3 rounded">
-                        <a href ="marina-schlosser-appleclone3.netlify.app">
-                            <span><img class="img-responsive" src="./images/appleclone-project.png"></span>
-                        </a>
-                      <p class="mb-1">Apple Page Clone</p>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-2 ">
-                    <div class="text-box aspectRatioBox mb-3 rounded">
-                        <a href="https://newsweekclone2-marinaschlosser.netlify.app/">
-                            <span><img class="img-responsive" src="images/newsweek-clone.png"></span>
-                        </a>
-                      <p class="mb-1">Newsweek clone with boostrap 4</p>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-2 ">
-                    <div class="text-box aspectRatioBox mb-3 rounded">
-                        <a href="airbnbclone-marinas.netlify.app">
-                            <span><img class="img-responsive" src="./images/airbnb-clone.png"></span>
-                        </a>
-                      <p class="mb-1">Airbnb Clone</p>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-2 ">
-                    <div class="text-box aspectRatioBox mb-3 rounded">
-                        <a href="https://airbnbnews3-marinaschlosser.netlify.app/">
-                            <span><img class="img-responsive" src="./images/airbnb-news-clone.png"></span>
-                        </a>
-                      <p class="mb-1">Airbnb News Clone</p>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-2 ">
-                    <div class="text-box aspectRatioBox mb-3 rounded">
-                        <a href="https://airbnbexperiences-boostrap-marinas.netlify.app/">
-                            <span><img class="img-responsive" src="./images/airbnb-online-experiences.png"></span>
-                        </a>
-                      <p class="mb-1">Airbnb Online Experiences Clone</p>
-                    </div>
-                </div>
-            </div> -->
-
-        </div>
-    </section>
-    <section id="contact" class="container-fluid contact mt-3 mb-3 pt-3 pb-3 pl-3">
+        <section id="contact" class="contact mt-3 mb-3 pt-3 pb-3 pl-3">
             <div class="title-section">
                 <h2>Contact</h2>
                 <p>I'm always open to discussing work or partnerships. Let's connect!</p>
