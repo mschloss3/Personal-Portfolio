@@ -3,13 +3,11 @@
         flex-direction: row;
         display: flex!important;
         flex-basis: auto;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
     }
-    .navbar-toggler {
-        color: white;
-        font-size: 1.3rem;
-        cursor: pointer;
-        outline: none;
-        Background-color: orange;
+    .navbar-expand-lg >.container {
+        flex-wrap: nowrap;
     }
 }
 
@@ -38,26 +36,56 @@
 }
 
 
-#navbar {
+.navbar {
     background-color: black;
     padding: 0.5rem 1rem;
     align-items: center;
-    display: inline-block;
-    height: 45px;
+    display: flex;
+    justify-content: space-between;
     
 }
 
-.navbar-toggler {
+.navbar-bar {
+    justify-content: end;
+    float: right;
+}
+
+header nav.navbar .navbar-toggler {
     padding: 0.25rem 0.75rem;
     line-height: 1;
     border: 1px solid transparent;
     border-radius: 0.25rem;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    z-index: 999;
+    outline: none;
+    background-color: orange;
 }
 
-.navbar-nav .nav-item .nav-link {
+header nav.navbar .navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+    font-family:fantasy;
+}
+
+header nav.navbar {
+    z-index: 9999;
+    background-color: black;
+}
+
+header nav.navbar .navbar-nav .nav-item .nav-link {
     padding: 0.5rem;
     color: white;
     transition: 0.3s;
+    margin-right: 0.5rem;
+}
+
+.navbar-nav {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
 }
 
 .navbar-brand {
@@ -94,8 +122,6 @@ nav ul {
     height: 40px;
     list-style: none;
 }
-
-
 
 .fa.fa-github {
     font-family: "Font Awesome 5 brands";
@@ -142,28 +168,22 @@ img {
     font-weight: 700;
     line-height:56px;
     font-family: cursive;
-    color: black;
+    color: white;
     text-align: center;
 }
 
 .hero-container {
-    color: black;
+    color: white;
     font-family: fantasy;
-    margin-bottom: 220px;
-    margin-right: 50px;
 }
-
 
 .skills, .contact {
     background: rgb(187, 242, 252)
 }
 
-
 .progress-bar {
     height: 20px;
 }
-
-
 
 .img-responsive {
     width: 100%;
@@ -226,71 +246,71 @@ img {
     color: #0087ca;
   }
   
-  .aspectRatioBox {
+.aspectRatioBox {
     padding-top: 10px;
     background-size: cover;
   }
 
-  .rounded {
+.rounded {
     border-radius: 0.25!important;
   }
 
-  .contact-inner {
+.contact-inner {
     background-color:#ffd394;
     padding: 24px 0;
     display: grid;
    
   }
   
-  .row {
+.row {
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: 15px;
   }
 
-  h3 {
+h3 {
     font-weight: bolder;
   }
 
-  .aspectratiobox-location {
+.aspectratiobox-location {
     padding-top: calc(1/2 *100%);
     background-size: cover;
     background-position: center;
     border: 1px solid black;
   }
 
-  .contact-email, .contact-social {
+.contact-email, .contact-social {
     margin-top: 24px;
   }
 
-  h4 {
+h4 {
     font-size: 1rem;
     margin-bottom: 0px;
   }
 
-  #contact {
+#contact {
     padding-left:25px;
     padding-right: 30px;
   }
 
-  .contact-email i {
+.contact-email i {
     font-size: 24px;
     color: black;
     margin-bottom: 12px;
   }
 
-  .contact-social i {
+.contact-social i {
     font-size: 24px;
     color: black;
     margin-bottom: 12px;
   }
 
-  .contact-email, .contact-social {
+.contact-email, .contact-social {
     text-align: center;
   }
 
-  .contact-rounded {
+.contact-rounded {
     text-align: center;
   }
   
@@ -300,21 +320,17 @@ img {
     margin-top: 12px;
 }
 
-  .contact-column {
+.contact-column {
     padding-right: 40px;
     padding-left: 40px;
   }
 
-  .footer-inner {
+.footer-inner {
     background-color: grey;
     color: black;
     font-size: 14px;
     border-top: 1px solid grey;
     padding: 24px 0;
-  }
-
-  .col-auto {
-    margin-left: 300px;
   }
 
   .border-style {
