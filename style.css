@@ -1,18 +1,27 @@
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
     .navbar-expand-lg .navbar-collapse{
-        flex-direction: row;
-        display: flex!important;
+        /* flex-direction: row; */
+        display: none;
         flex-basis: auto;
-        flex-flow: row nowrap;
-        justify-content: flex-start;
+        /* flex-flow: row nowrap; */
+        /* justify-content: flex-start; */
     }
     .navbar-expand-lg >.container {
         flex-wrap: nowrap;
     }
 }
 
-#my-name, h2 {
+html {
+    scroll-padding-top: 5rem;
+}
+
+ h2 {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main {
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .text-center {
@@ -178,7 +187,9 @@ img {
 }
 
 .skills, .contact {
-    background: rgb(187, 242, 252)
+    background: rgb(187, 242, 252);
+    width: 100%;
+    background-size: cover;
 }
 
 .progress-bar {
@@ -195,12 +206,16 @@ img {
     grid-auto-flow: column;
     grid-auto-columns: 50%;
     overflow-x: scroll;
-    grid-column-gap: 16px;
+    /* grid-column-gap: 16px; */
     overscroll-behavior-inline: contain;
+    padding-left:15px;
+    padding-right:15px;
 }
 
 .portfolio-info {
     text-align: center;
+    font-family: fantasy;
+    padding-top: 20px;
 }
 
 .portfolio-html {
@@ -239,12 +254,6 @@ img {
     position: relative;
     color: #173b6c;
 }
-
-.hover-underline-animation {
-    display: inline-block;
-    position: relative;
-    color: #0087ca;
-  }
   
 .aspectRatioBox {
     padding-top: 10px;
@@ -337,7 +346,4 @@ h4 {
     border: 1px solid black;
   }
 
-  /* .container-fluid {
-    max-width: 1550px;
-  } */
-
+  
